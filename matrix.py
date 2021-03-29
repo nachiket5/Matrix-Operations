@@ -9,7 +9,7 @@ for i in range(-(a-1),a):
     dg =list(np.array(ls).diagonal(i))
     if len(dg) >=4:
         res.append(dg)
-# print(list(np.array(ls).shape))
+
 ary=np.array(ls)
 for i in ary:
     if len(i)>=4:
@@ -20,7 +20,6 @@ for i in  trans:
     if len(i) >=4:
         res.append(list(i))
 
-# print(res)
 result =[]
 for i in res:
     nm =0
@@ -35,19 +34,5 @@ if len(result) >=1:
 else:
     print(-1)
 
-
-
-
-
-# result =[]
-# for i in res:
-#     for j in i:
-#         n =i.count(j)
-#         if n >=4:
-#             result.append(j)
-# if len(result) >=1:
-#     print(min(result))
-# else:
-#     print(-1)
 
 
